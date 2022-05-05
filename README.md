@@ -27,9 +27,6 @@ While learning and going through multiple web developments subjects enumerated i
 * Mos be readable organizde code with high quality web performance, accesibility and responsiveness.
 * Done from "scratch"
 
-* System must be aware of fees all the time.
-
-
 ## Roadmap
 
 ### V. 0.1.0.
