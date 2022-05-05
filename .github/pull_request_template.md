@@ -1,7 +1,7 @@
 <!-- PR Title Format: `[##] (feature|bugfix) : <Short Description>` -->
 
 #### Issue Link:
-<!-- Link to JIRA -->
+<!-- Link to Github Issue -->
 - [##](https://github.com/sotoyjuan/portfolio/issues/##)
 
 #### What does this PR do?
