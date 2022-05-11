@@ -1,15 +1,20 @@
+/*NORMALIZE */
 @import "normalize";
-
 @include normalize();
 
-$highligh-color: #5EFF7C;
-$light-color: #F2F2F2;
-$dark-color: #0E1410;
+/* ABSTRACT */
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'abstract/functions';
 
-body {
-    background-color: $dark-color;
-    color: $light-color;
-    h1 {
-        color: $highligh-color;
-    }
-}
+/* BASE */
+@import 'base/base';
+@import 'base/typography';
+
+/* COMPONENTS */
+
+/* LAYOUT */
+@import 'layout/grid';
+
+
+/* PAGES */
