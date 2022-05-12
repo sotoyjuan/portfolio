@@ -1,3 +1,16 @@
-$highligh-color: #5EFF7C;
-$light-color: #F2F2F2;
-$dark-color: #0E1410;
+/* COLOR */
+$color-main: #5EFF7C;
+$color-light: #F2F2F2;
+$color-dark: #0E1410;
+
+/* RESPONSIVE DESIGN */
+$breakpoints: (
+  'medium': (min-width: 720px),
+  'large': (min-width: 1024px),
+  'huge': (min-width: 1440px),
+);
+
+/* TYPOGRAPHY */
+$weight-light: 200;
+$weight-regular: 400;
+$weight-bold: 600;
