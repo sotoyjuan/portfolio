@@ -1,0 +1,13 @@
+/// @access public
+/// @param {Number} $value - Pixels
+/// @requires $value
+@function toRem($value) {
+    $remValue: ($value / 10) + rem;
+    @return $remValue
+}
+
+/// @access public
+/// @param {Number} $times
+@function getUnit($times: 1) {
+  @return $base-unit * $times;
+}

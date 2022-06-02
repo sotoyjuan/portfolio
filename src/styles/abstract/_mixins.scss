@@ -2,7 +2,7 @@
 /// @access public
 /// @param {String} $breakpoint - Breakpoint
 /// @requires $breakpoints
-@mixin respond-to($breakpoint) {
+@mixin breakpoint($breakpoint) {
     $raw-query: map-get($breakpoints, $breakpoint);
 
     @if $raw-query {
