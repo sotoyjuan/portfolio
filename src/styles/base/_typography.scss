@@ -1,0 +1,30 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    color: $color-light;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+    color: $color-main;
+    font-weight: $weight-bold;
+}
+
+.headline-0 {
+    font-size: to-rem(level(12));
+    @include bp(large) {
+        font-size: to-rem(level(16));
+    }
+}
+
+.headline-1 {
+    font-size: to-rem(level(10));
+    @include bp(large) {
+        font-size: to-rem(level(12));
+    }
+}
+
+.headline-2 {
+    font-size: to-rem(level(8));
+    @include bp(large) {
+        font-size: to-rem(level(8));
+    }
+}
