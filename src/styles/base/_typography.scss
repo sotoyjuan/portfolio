@@ -9,22 +9,22 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 .headline-0 {
-    font-size: toRem(getUnit(12));
-    @include breakpoint(large) {
-        font-size: toRem(getUnit(16));
+    font-size: to-rem(level(12));
+    @include bp(large) {
+        font-size: to-rem(level(16));
     }
 }
 
 .headline-1 {
-    font-size: toRem(getUnit(10));
-    @include breakpoint(large) {
-        font-size: toRem(getUnit(12));
+    font-size: to-rem(level(10));
+    @include bp(large) {
+        font-size: to-rem(level(12));
     }
 }
 
 .headline-2 {
-    font-size: toRem(getUnit(8));
-    @include breakpoint(large) {
-        font-size: toRem(getUnit(8));
+    font-size: to-rem(level(8));
+    @include bp(large) {
+        font-size: to-rem(level(8));
     }
 }

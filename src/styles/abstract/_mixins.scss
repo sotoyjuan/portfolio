@@ -1,8 +1,8 @@
 /* RESPONSIVE DESIGN MANAGER */
 /// @access public
 /// @param {String} $breakpoint - Breakpoint
-/// @requires $breakpoints
-@mixin breakpoint($breakpoint) {
+/// @requires $breakpoint
+@mixin bp($breakpoint) {
     $raw-query: map-get($breakpoints, $breakpoint);
 
     @if $raw-query {
