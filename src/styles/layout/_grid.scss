@@ -1,0 +1,46 @@
+/* GRID VARIABLES */
+$grid-rows: 1;
+$grid-columns: 12;
+$grid-gap: to-rem(level(1));
+$grid-columns-spread: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+$grid-breakpoints: map-keys($breakpoints);
+
+
+/* GRID LOGIC */
+@mixin cols-sizes($breakpoint) {
+    @each $col in $grid-columns-spread {
+        .cell-#{$breakpoint}-#{$col} {
+            grid-column: auto/span #{$col};
+        }
+
+    }
+}
+
+@mixin cols-offset($breakpoint) {
+    @each $col in $grid-columns-spread {
+        &.grid-offset-#{$breakpoint}-#{$col} {
+            :first-child {
+                grid-column-start: calc($col + 1);
+            }
+        }
+    }
+}
+
+@mixin cols-breakpoints($breakpoints) {
+    @each $br in $breakpoints {
+        @include bp($br) {
+            @include cols-sizes($br);
+            @include cols-offset($br);
+        }
+    }
+}
+
+/* GRID STYLE */
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat($grid-rows, 1fr);
+    grid-template-columns: repeat($grid-columns, 1fr);
+    gap: $grid-gap;
+
+    @include cols-breakpoints($grid-breakpoints);
+}
