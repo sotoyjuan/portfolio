@@ -2,7 +2,7 @@
 /// @param {Number} $value - Pixels
 /// @requires $value
 @function to-rem($value) {
-    $remValue: ($value / 10) + rem;
+    $remValue: calc($value / 10) + rem;
     @return $remValue
 }
 

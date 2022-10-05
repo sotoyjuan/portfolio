@@ -1,0 +1,43 @@
+title: Portfolio
+description: Juan Soto Portfolio
+grow_version: "==2.2.2"
+
+home: /content/pages/main/home.yaml
+
+static_dirs:
+- static_dir: /static/
+  serve_at: /static/
+- static_dir: /dist/
+  serve_at: /
+
+localization:
+  default_locale: en
+  locales:
+  - en
+  aliases:
+    en: en
+  require_translations: false
+
+preprocessors:
+- kind: gulp
+
+meta: null
+
+sitemap:
+  enabled: yes
+  path: /sitemap.xml
+  collections:
+  - pages
+  locales:
+  - en
+
+# TODO: Refactor
+deployments:
+  default:
+    destination: local
+    out_dir: /
+    env:
+      name: prod
+      host: example.com
+      port: 80
+      scheme: https
