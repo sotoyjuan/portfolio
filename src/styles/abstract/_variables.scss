@@ -8,9 +8,10 @@ $color-dark: #0E1410;
 
 /* RESPONSIVE DESIGN */
 $breakpoints: (
+  'small': (max-width: 719px),
   'medium': (min-width: 720px),
   'large': (min-width: 1024px),
-  'huge': (min-width: 1440px),
+  'huge': (min-width: 1440px)
 );
 
 /* TYPOGRAPHY */
